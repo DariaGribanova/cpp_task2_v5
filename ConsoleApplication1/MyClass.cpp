@@ -135,6 +135,7 @@ bool MyClass::canExtend(MyClass* myClass)
         //cout << endl;
 
 
+
         vector<Function*> funcs2 = myClass->getFuncVector();
         vector<Function*> extendFuncs(funcs2.begin(), funcs2.end());
 
@@ -147,7 +148,6 @@ bool MyClass::canExtend(MyClass* myClass)
         sort(thisFuncs.begin(), thisFuncs.end());
         sort(extendFuncs.begin(), extendFuncs.end());
         res = std::includes(extendFuncs.begin(), extendFuncs.end(), thisFuncs.begin(), thisFuncs.end());
-        cout << res << endl;
         thisFuncs.clear();
         thisFuncs.shrink_to_fit();
         extendFuncs.clear();

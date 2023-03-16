@@ -17,7 +17,6 @@ public:
 
     bool operator!=(const Namespace& rhs) const;
 
-    Namespace& operator=(const Namespace& rhs);
 
     MyClass* rmCLass(int id);
     
